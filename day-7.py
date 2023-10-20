@@ -1,5 +1,5 @@
-from resources.day7.hangman_art import logo, stages
-from resources.day7.hangman_words import word_list
+from resources.day7.art import logo, stages
+from resources.day7.words import word_list
 import random
 import os
 import time

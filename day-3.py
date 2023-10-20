@@ -1,4 +1,4 @@
-from resources.day3ascii import treasure_chest, game_over
+from resources.day3.art import treasure_chest, game_over
 
 play_game = True
 

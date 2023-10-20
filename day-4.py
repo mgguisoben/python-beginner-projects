@@ -1,4 +1,4 @@
-from resources.day4ascii import rock, paper, scissors
+from resources.day4.art import rock, paper, scissors
 from random import choice
 
 
