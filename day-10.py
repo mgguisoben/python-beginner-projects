@@ -1,3 +1,16 @@
+def add(x, y): return x + y
+def sub(x, y): return x - y
+def mul(x, y): return x * y
+def div(x, y): return x / y
+
+# PEP 8:E731
+# Always use a def statement instead of an assignment statement that binds a lambda expression directly to a name.
+# add = lambda x,y: x + y
+# sub = lambda x,y: x - y
+# mul = lambda x,y: x * y
+# div = lambda x,y: x / y
+
+
 calculator = """
  _____________________
 |  _________________  |
@@ -14,11 +27,6 @@ calculator = """
 | |___|___|___| |___| |
 |_____________________|
 """
-
-add = lambda x,y: x + y
-sub = lambda x,y: x - y
-mul = lambda x,y: x * y
-div = lambda x,y: x / y
 
 current_total = 0
 
@@ -46,7 +54,7 @@ while calculating:
     print(f"{num1} {oper} {num2} = {current_total}")
 
     calc_current = input(f"Type 'y' to continue calculating with {current_total}, "
-                          f"or type 'n' to start a new calculation: " )
+                         f"or type 'n' to start a new calculation: ")
 
     if calc_current == 'y':
         num1 = current_total
